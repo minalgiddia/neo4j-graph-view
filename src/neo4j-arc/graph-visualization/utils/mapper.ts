@@ -56,8 +56,8 @@ export function mapRelationships(
   graph: GraphModel
 ): RelationshipModel[] {
   return relationships.map(rel => {
-    const source = graph.findNode(rel.startNodeId)
-    const target = graph.findNode(rel.endNodeId)
+    const source = graph.findNode(rel.startNode)
+    const target = graph.findNode(rel.endNode)
     return new RelationshipModel(
       rel.id,
       source,

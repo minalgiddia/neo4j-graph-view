@@ -141,8 +141,8 @@ export class Visualization extends Component<
     const uniqRels = nodeLimitHit
       ? relationships.filter(
           rel =>
-            !!uniqNodes.find(node => node.id === rel.startNodeId) &&
-            !!uniqNodes.find(node => node.id === rel.endNodeId)
+            !!uniqNodes.find(node => node.id === rel.startNode) &&
+            !!uniqNodes.find(node => node.id === rel.endNode)
         )
       : relationships
 

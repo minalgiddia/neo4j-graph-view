@@ -142,8 +142,8 @@ export const extractUniqueNodesAndRels = (
     .map(item => {
       return {
         id: item.identity.toString(),
-        startNodeId: item.start.toString(),
-        endNodeId: item.end.toString(),
+        startNode: item.start.toString(),
+        endNode: item.end.toString(),
         type: item.type,
         properties: mapObjectValues(item.properties, propertyToString),
         propertyTypes: mapObjectValues(

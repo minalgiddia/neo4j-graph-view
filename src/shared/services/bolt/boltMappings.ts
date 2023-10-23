@@ -274,8 +274,8 @@ export function extractNodesAndRelationshipsFromRecordsForOldVis(
   relationships = relationships.map(item => {
     return {
       id: item.identity.toString(),
-      startNodeId: item.start.toString(),
-      endNodeId: item.end.toString(),
+      startNode: item.start.toString(),
+      endNode: item.end.toString(),
       type: item.type,
       properties: itemIntToString(item.properties, converters),
       propertyTypes: Object.entries(item.properties).reduce(

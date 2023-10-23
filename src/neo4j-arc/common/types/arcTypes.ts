@@ -25,8 +25,8 @@ export type BasicNode = {
 }
 export type BasicRelationship = {
   id: string
-  startNodeId: string
-  endNodeId: string
+  startNode: string
+  endNode: string
   type: string
   properties: Record<string, string>
   propertyTypes: Record<string, string>
